@@ -1,8 +1,5 @@
 class Matrix(rows: Int, cols: Int, val data: Array[Array[Double]]){
-  /*private var n = 4
-  private var matrices = Array.ofDim[Matrix](4, 2)
-  private var dims = Array.ofDim[Int](4, 2)*/
-
+  
   def init(value: Double) {
     for (i <- 0 until rows)
       for (j <- 0 until cols)
@@ -15,12 +12,7 @@ class Matrix(rows: Int, cols: Int, val data: Array[Array[Double]]){
     println
   }
 
-  def +(that: Matrix) = {
-    /*if ((rows != that.data.size) || (cols != that.data.size))
-    {
-      println("Non conformable matrices in function +")
-    }*/
-
+  def +(that: Matrix) = {    
     val resData = Array.ofDim[Double](rows, cols)
 
     for (i <- 0 until rows)
