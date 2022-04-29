@@ -69,8 +69,7 @@ object MatrixExpr {
 
     println("Time for calculating expr 1: " + duration1 + " seconds.")
     println("Time for calculating expr 2: " + duration2 + " seconds.")
-    println("Speedup = Time1/Time2: " + duration1/duration2 + ".")
-    println("\nfin")
+    println("Speedup = Time1/Time2: " + duration1/duration2 + ".")    
   }
 
 }
